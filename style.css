@@ -1,0 +1,133 @@
+body {
+  font-family: 'Merriweather', serif!important;
+  color: #c9c1ac!important;
+}
+
+.info {
+  background: #c9c1ac;
+}
+
+.primary-color {
+  color: #941010;
+}
+
+.info h2 {
+  word-spacing: 0.6rem; /*words will be properly spaced for mobile */
+}
+
+.info a {
+  transition: color 2s ease-in-out; /*targetting color property */
+}
+
+.info a:hover {
+  color: #222;
+}
+
+/* Header */
+
+header .btn i{
+  color: #941010!important;
+}
+
+#header {
+  min-height: calc(100vh - 94px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/pizza-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.height-90 {
+  min-height: calc(100vh - 94px); /* same exact height as header */
+}
+
+.banner h1 {
+  border-top: 6px dotted #c9c1ac;
+  border-bottom: 6px dotted #c9c1ac;
+  animation: fromLeft;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;  /* once animation stops in stays in place/ doesn't disappear */
+}
+
+@keyframes fromLeft { /* h1 animates from the left */
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main-btn {
+  color: #941010!important;
+  background-color: #f1f1f1!important;
+  font-size: 2rem!important;
+  border: 2px solid #941010!important;
+  transition: all 2s ease-in-out;
+}
+
+.main-btn:hover {
+  color: #222!important;
+  border: 2px solid #c9c1ac!important;
+  background: #c9c1ac!important;
+}
+
+.pizza-btn {
+  animation: fromRight;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromRight { /* h1 animates from the right for button */
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: #c9c1ac!important;
+  border-radius: 10px!important; /*rounded edges */
+  transition: all 2s ease!important;
+  color: #222!important;
+  animation: fromBottom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes fromBottom {
+  0% {
+    transform: translateY(-10px); /* Y axis because btn is bouncing up & down */
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.header-link i:hover {
+  color: #222!important;
+}
