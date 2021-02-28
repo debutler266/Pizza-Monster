@@ -180,3 +180,23 @@ header .btn i{
   outline: 10px solid #941010;
   outline-offset: 0.8rem;
 }
+
+
+/* Menu */
+
+#menu{
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('img/pizza-bg.jpg')center/cover fixed no-repeat;
+}
+
+.special {
+  border: 3px solid #941010!important;
+  position: relative;
+}
+
+.special-text {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: #941010!important;
+  padding: 0 0.4rem;
+}
