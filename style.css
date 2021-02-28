@@ -1,6 +1,7 @@
 body {
   font-family: 'Merriweather', serif!important;
   color: #c9c1ac!important;
+  background: url('img/pizza-bg2.jpg')center/cover fixed no-repeat; /* short-hand code for #header styling */
 }
 
 .info {
@@ -130,4 +131,52 @@ header .btn i{
 
 .header-link i:hover {
   color: #222!important;
+}
+
+/* Menu & items */
+.item-container {
+  position: relative;
+  /* for links in this class */
+  overflow: hidden; /* for the zoom in effect on menu item */
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 2s ease;
+}
+
+.item-img {
+  transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2); /*zooms in as opposed to just widing image because of overflow set to hidden (above) */
+  opacity: 0.4;
+}
+
+.item-link {
+  position: absolute; /* can be placed absolute .item-container(parent) is set to absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* moves link to center of image */
+  color: #941010!important;
+  font-size: 2rem;
+  border-top: 3px solid #941010!important;
+  border-bottom: 3px solid #941010!important;
+  transition: all 2s ease;
+   opacity: 0;
+}
+
+.item-container:hover .item-link {
+  opacity: 1;
+}
+
+.item-link:hover {
+  color: #c9c1ac!important;
+  border: 3px solid #c9c1ac!important;
+  background: #c9c1ac!important;
+  color: #222!important;
+}
+
+/*should be placed with .item-container class */
+.item-container:hover {
+  outline: 10px solid #941010;
+  outline-offset: 0.8rem;
 }
