@@ -200,3 +200,78 @@ header .btn i{
   background: #941010!important;
   padding: 0 0.4rem;
 }
+
+/* About us */
+
+.about-pictures {
+  position: relative;
+}
+
+.about-image {
+  position: absolute;
+  width: 150px;
+  transition: all 2s ease;
+  opacity: 0.9;
+}
+
+.img-1 {
+  left: 0%;
+  top: 0%;
+}
+
+.img-2 {
+  left: 20%;
+  top: 20%;
+  z-index: 10;
+}
+
+.img-3 {
+  left: 40%;
+  top: 45%;
+  z-index: 20;
+}
+
+.img-4 {
+  left: 40%;
+  top: 0%;
+}
+
+.img-5 {
+  left: 0%;
+  top: 45%;
+}
+
+.about-image:hover {
+  outline: 10px solid #941010!important;
+  outline-offset: 0.8rem;
+  transform: scale(1.3) rotate(20deg); /*scale to get image bigger, then rotate image, z-indez must be bigger than biggest already being used (20) */
+  z-index: 30;
+  opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover) {
+  opacity: 0.5;
+}
+
+/* testimonials */
+
+.review-item {
+  background: rgba(255, 255, 255, 0.7);
+  clip-path:polygon(5% 0,100% 0,90% 100%, 0 100%); /*styling for reviews white section */
+}
+
+.review-img {
+  width: 150px;
+}
+
+/* Our team */
+
+.team-icons a {
+  color: #941010; /* I can go back & target each icons if I want them each to have individual colors */
+  transition: all 2s ease-in-out; /* 2 second transition */
+}
+
+.team-icons a:hover {
+  color: #222;
+  transform: translateY(-5px);
+}
