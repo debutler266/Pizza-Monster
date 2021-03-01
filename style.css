@@ -273,5 +273,51 @@ header .btn i{
 
 .team-icons a:hover {
   color: #222;
-  transform: translateY(-5px);
+  transform: translateY(-5px); /*move upwards (Y axis) */
+}
+
+/* Contact */
+
+.height-60 {
+  min-height: 60vh; /* map taking up 60% of the view-port height */
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 2s ease;
+}
+
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+  color: #941010!important;
+}
+
+#contact .input-group-text {
+  background: #941010!important;
+  border-color: #941010!important;
+  color: #222!important;
+}
+
+#contact .card input {
+  color: #333;
+}
+
+#contact .card input::placeholder {
+  color: #333;
+}
+
+.contact-btn {
+  color: #941010!important;
+  border-color: #941010!important;
+  background: transparent!important;
+  transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: #c9c1ac!important;
+  color: #941010!important;
+  border-color: #c9c1ac!important;
 }
