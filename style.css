@@ -133,6 +133,80 @@ header .btn i{
   color: #222!important;
 }
 
+/* Navbar section */
+.navbar {
+  background: #c9c1ac;
+  padding: 20px 20px;
+  transition: all 1s ease;
+}
+.navbar-background { /* will be used in JS to override .navbar padding of 20px top & botton for certain sized screens */
+  padding: 5px 20px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  transition: all 1s ease;
+}
+
+.navbar-brand:hover {
+color: #222!important;
+}
+
+.nav-link {
+  color: #222!important;
+  text-decoration: none;
+  transition: all 1s ease;
+  font-size: 23px;
+}
+
+.nav-link:hover {
+  color: #941010!important;
+}
+
+.nav-btn {
+  background: transparent!important;
+  color: #941010!important;
+  border: 2px solid #941010!important;
+  font-size: 23px;
+  transition: all 1s ease;
+}
+
+.nav-btn:hover {
+  color: #222!important;
+  border: 2px solid #222!important;
+  transform: rotate(10deg);
+}
+
+.toggler-btn {
+  border: 2px solid #941010!important;
+  padding: 5px!important;
+  transition: all 1s ease!important;
+}
+
+
+
+.bar { /* styling for menu bars on mobile/small screens*/
+  width: 30px!important;
+  height: 3px!important;
+  margin: 5px!important;
+  background: #941010!important;
+  transition: all 0.5s ease;
+}
+
+/* classes that will take effect using JS for mobile menu */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px)!important;
+}
+
+.change .bar2 {
+  opacity: 0!important; /* bar disappears when clicked */
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+
 /* Menu & items */
 .item-container {
   position: relative;
@@ -320,4 +394,18 @@ header .btn i{
   background: #c9c1ac!important;
   color: #941010!important;
   border-color: #c9c1ac!important;
+}
+
+/* Footer section */
+
+#back-to-top {
+  background: #c9c1ac;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.scrollTop { /* only take effect when scrolling down the page */
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
 }

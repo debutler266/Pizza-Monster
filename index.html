@@ -49,8 +49,59 @@
     </header>
 
     <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg"> <!--  navbar-expand-lg navbar reaches a large size, then expands, won't expand if size a large size is not needed. Also can use large/medium/small (bootstrap classes) -->
+      <a href="#" class="navbar-brand text-uppercase primary-color">Pizza monster</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#myNavbar">
+      <div class="toggler-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+
+    </button>
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+        <a href="#special-items" class="nav-link text-capitalize">Special item</a>
+        </li>
+
+        <li class="nav-item">
+        <a href="#menu" class="nav-link text-capitalize">menu</a>
+        </li>
+
+        <li class="nav-item">
+        <a href="#about" class="nav-link text-capitalize">about</a>
+        </li>
+
+        <li class="nav-item">
+        <a href="#reviews" class="nav-link text-capitalize">reviews</a>
+        </li>
+
+        <li class="nav-item">
+        <a href="#team" class="nav-link text-capitalize">team</a>
+        </li>
+
+        <li class="nav-item">
+        <a href="#contact" class="nav-link text-capitalize">contact</a>
+        </li>
+
+
+      </ul>
+      <form class="form-inline d-none d-lg-block mr-5">
+        <button class="btn nav-btn text-capitalize" type="button">
+        Order online</button>
+
+      </form>
+
+    </div>
+
+    </nav>
+
+
     <!-- Menu -->
-    <section class="py-5" id="#special-items">
+    <section class="py-5" id="special-items">
       <div class="container my-5">
         <div class="row parent-container">
             <!-- item -->
@@ -553,15 +604,28 @@
   </div>
 </section>
 
-
-
 <!-- End of contact section -->
 
+<!-- footer section -->
+<div class="container-fluid info p-3">
+  <div class="row">
+    <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+      <div class="info-icons p-2">
+        <a class="mr-2 primary-color" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a class="mr-2 primary-color" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a class="mr-2 primary-color" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a class="mr-2 primary-color" href="#"><i class="fab fa-yelp fa-2x"></i></a>
+      </div>
+      <h2 class="primary-color p-2 text-uppercase">&copy;copyright Pizza Monster 2021</h2>
+    </div>
+  </div>
 
+</div>
+<a class="p-1" href="#top-icons" id="back-to-top"><i class="fas fa-arrow-up primary-color fa-3x"></i></a>
 
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js" integrity="sha512-wrQIZRuIVRafoAsp5i2HIXa+3oF+lQqx4eOMAdw+vt7npivM7+D4OMIZPhlkdbV18VxZLkn2QaOii6cr8c1+dA==" crossorigin="anonymous"></script> -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous"></script>
