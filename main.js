@@ -28,16 +28,29 @@ $(window).scroll(function(){
 });
 
 //Smooth scroll effect
-$('.nav-item a').click(function(link){
+$('.nav-item a, .header-link, #back-to-top').click(function(link){
   link.preventDefault();
 
   let target = $(this).attr('href');
 
-  $('html, body').animate({
+  $('html, body').stop().animate({ //.stop previous anmation will stop running
     scrollTop: $(target).offset().top - 25
   },3000); //3000 take effect at 3 seconds
 
 })
+
+//Back to top button
+$(window).scroll(function(){
+
+  let position = $(this).scrollTop();
+
+  if(position>= 718){
+    $('#back-to-top').addClass('scrollTop'); //treats parent container like a 'body', scrollTop used in CSS to replace #back-to-top
+
+  } else {
+    $('#back-to-top').removeClass('scrollTop');
+  }
+});
 
 
 
