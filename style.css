@@ -419,10 +419,14 @@ color: #222!important;
   }
 
   .primary-color {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   body {
     overflow-x: hidden;
+  }
+
+  .lead {
+    font-size: 0.8rem!important;
   }
 }
