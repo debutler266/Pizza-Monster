@@ -2,6 +2,7 @@ body {
   font-family: 'Merriweather', serif!important;
   color: #c9c1ac!important;
   background: url('img/pizza-bg2.jpg')center/cover fixed no-repeat; /* short-hand code for #header styling */
+  overflow-x: hidden;
 }
 
 .info {
@@ -408,4 +409,20 @@ color: #222!important;
   position: fixed;
   bottom: 70px;
   right: 10px;
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .small, small {
+    font-size: 50%!important;
+  }
+
+  .primary-color {
+    font-size: 3rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
