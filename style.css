@@ -424,6 +424,10 @@ color: #222!important;
 
   body {
     overflow-x: hidden;
+    background: url('img/pizza-bg2.jpg'); /* short-hand code for #header styling */
+    position: fixed;
+    background-position: 85% 50%;
+
   }
 
   .lead {
@@ -435,13 +439,8 @@ color: #222!important;
   }
 
   .text-muted {
-    color: #ffffff;
+    color: #ffffff!important;
     font-size: 1.1rem;
-  }
-
-  body {
-    background-position: center;
-    
   }
 
 }
