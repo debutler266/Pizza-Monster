@@ -425,7 +425,6 @@ color: #222!important;
   body {
     overflow-x: hidden;
     background: url('img/pizza-bg2.jpg'); /* short-hand code for #header styling */
-    background-size: cover;
   }
 
   .lead {
